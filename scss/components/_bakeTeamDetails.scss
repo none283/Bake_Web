@@ -1,0 +1,169 @@
+.c-bakeTeamDetails__1
+{
+    position: absolute;
+    bottom: 0px;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba($color: black, $alpha: 0);
+
+    z-index: 50;
+
+    &:hover
+    {
+        transition: 1s;        
+
+        .c-bakeTeamDetails__hidedFullName
+        {
+            transition: 1s;
+            opacity: 1;
+        }
+
+        .c-bakeTeamDetails__hidedJob
+        {
+            transition: 1s;
+            opacity: 1;
+        }
+
+        .c-bakeTeamDetails__hidedString
+        {
+            transition: 1s;
+            opacity: 1;
+        }
+
+        .c-bakeTeamDetails__iconFb
+        {
+            transition: 1s;
+            opacity: 1;
+        }
+
+        background-color: rgba($color: black, $alpha: 0.8);
+    }
+
+    &:hover ~ .p-bakeTeam__name1{display: none}
+
+    .c-bakeTeamDetails__hidedFullName
+    {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+
+        position: absolute;
+        top: 20%;
+        left: 10%;
+
+        color: #ff0e83;
+
+        opacity: 0;
+    }
+
+    .c-bakeTeamDetails__hidedJob
+    {
+        font-weight: 200;
+        font-size: 14px;
+        letter-spacing: 1px;
+
+        position: absolute;
+        top: 30%;
+        left: 10%;
+
+        color: white;
+        
+        opacity: 0;
+    }
+
+    .c-bakeTeamDetails__hidedString
+    {
+        position: absolute;
+        font-size: 14px;
+        left: 10%;
+        top: 40%;
+        
+        width: 70%;
+        text-align: left;
+        line-height: 30px;
+        
+        color: white;
+
+        opacity: 0;
+    }
+
+    .c-bakeTeamDetails__iconFb
+    {
+        position: absolute;
+        left: 11%;
+        top: 65%;
+
+        width: 33px;
+        height: 25px;
+
+        text-align: center;
+        padding-top: 8px;
+
+        color: white;
+        border: 1px solid white;
+
+        display: inline-block;
+
+        transition: 1s;
+
+        &:hover
+        {
+            cursor: pointer;
+            color: #ff0e83;
+            border-color: #ff0e83;
+        }
+
+        opacity: 0;
+    }
+
+    .c-bakeTeamDetails__iconGg
+    {
+        @extend .c-bakeTeamDetails__iconFb;
+
+        left: 25%;
+    }
+
+    .c-bakeTeamDetails__iconTt
+    {
+        @extend .c-bakeTeamDetails__iconFb;
+
+        left: 39%;
+    }
+}
+
+.c-bakeTeamDetails__2
+{
+    @extend .c-bakeTeamDetails__1;
+
+    &:hover ~ .p-bakeTeam__name1{display: none}
+}
+
+.c-bakeTeamDetails__3
+{
+    @extend .c-bakeTeamDetails__1;
+
+    &:hover ~ .p-bakeTeam__name1{display: none}
+}
+
+.c-bakeTeamDetails__4
+{
+    @extend .c-bakeTeamDetails__1;
+
+    &:hover ~ .p-bakeTeam__name1{display: none}
+}
+
+.c-bakeTeamDetails__5
+{
+    @extend .c-bakeTeamDetails__1;
+
+    &:hover ~ .p-bakeTeam__name1{display: none}
+}
+
+.c-bakeTeamDetails__6
+{
+    @extend .c-bakeTeamDetails__1;
+
+    &:hover ~ .p-bakeTeam__name1{display: none}
+}

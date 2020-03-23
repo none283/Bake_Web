@@ -1,0 +1,62 @@
+.c-row2
+{
+    height: 417.5px;
+
+    display: flex;
+
+    text-align: center;
+
+    &__part1
+    {
+        width: 50%;
+        background-color: #ed6498;
+
+        &__headerLeft
+        {
+            color: white;
+            font-size: 24px;
+            padding-bottom: 16px;
+
+            margin-top: 23.8%;
+        }
+
+        &__pLeft
+        {
+            width: 607.5px;
+            height: 87px;
+
+            margin: 0px auto;
+
+            line-height: 29px;
+
+            color: #c1c1c1;
+            font-size: 14px;
+        }
+    }
+
+    &__part2
+    {
+        width: 25%;
+
+        background-image: url('../images/quality.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__part3
+    {
+        width: 25%;
+
+        background-color: #836eaa;
+
+        &__headerRight
+        {
+            @extend .c-row1__part1__headerLeft;
+        }
+
+        &__pRight
+        {
+            @extend .c-row1__part1__pLeft;
+        }
+    }
+}

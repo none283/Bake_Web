@@ -1,0 +1,145 @@
+.p-bakeTeam
+{
+    background-color: #4E2A84;
+
+    text-align: center;
+
+    padding-top: 70px;
+    &__row1
+    {
+        padding-bottom: 50px;
+
+        color: white;
+        font-size: 48px;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+
+    &__row2
+    {
+        display: flex;
+
+        height: 462px;
+        width: 85%;
+
+        margin: 0 auto;
+    }
+
+    &__row3
+    {
+        display: flex;
+
+        height: 510px;
+        width: 85%;
+
+        margin: 0 auto;
+    }
+
+    &__name1
+    {
+        position: absolute;
+        bottom: 0px;
+
+        height: 115px;
+        width: 100%;
+        color: white;
+
+        background-color: #ff0e83;
+        z-index: 49;
+    }
+
+    &__name2
+    {
+        @extend .p-bakeTeam__name1;
+    }
+
+    &__name3
+    {
+        @extend .p-bakeTeam__name1;
+    }
+
+    &__name4
+    {
+        @extend .p-bakeTeam__name1;
+    }
+
+    &__name5
+    {
+        @extend .p-bakeTeam__name1;
+    }
+
+    &__name6
+    {
+        @extend .p-bakeTeam__name1;
+    }
+
+    &__fullName
+    {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+
+        position: absolute;
+        top: 30%;
+        left: 8%;
+    }
+
+    &__job
+    {
+        font-weight: 200;
+        font-size: 14px;
+        letter-spacing: 1px;
+
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+    &__col1
+    {
+        width: 33.3%;
+        height: 438px;
+
+        margin: 0 15px;
+        position: relative;
+
+        background-image: url('../images/t1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__col2
+    {
+        @extend .p-bakeTeam__col1;
+
+        background-image: url('../images/t2.jpg');
+    }
+
+    &__col3
+    {
+        @extend .p-bakeTeam__col1;
+
+        background-image: url('../images/t3.jpg');
+    }
+
+    &__col4
+    {
+        @extend .p-bakeTeam__col1;
+
+        background-image: url('../images/t4.jpg');
+    }
+
+    &__col5
+    {
+        @extend .p-bakeTeam__col1;
+
+        background-image: url('../images/t1.jpg');
+    }
+
+    &__col6
+    {
+        @extend .p-bakeTeam__col1;
+
+        background-image: url('../images/t2.jpg');
+    }
+}

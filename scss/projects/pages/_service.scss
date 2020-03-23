@@ -1,0 +1,39 @@
+.p-service
+{
+    &__inner
+    {
+        position: relative;
+
+        height: 551px;
+
+        background-image: url('../images/service.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__header
+        {
+            display: block;
+
+            width: 386px;
+
+            margin: 0 auto;
+
+            padding-top: 73px;
+
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: white;
+            font-weight: bold;
+        }
+
+        #anchorService
+        {
+            width: 10px;
+            height: 10px;
+
+            position: absolute;
+            top: 0px;
+            display: inline-block;
+        }
+    }
+}

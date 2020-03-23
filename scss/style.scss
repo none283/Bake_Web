@@ -1,0 +1,58 @@
+// ==========================================================================
+// Mixin
+// ==========================================================================
+@import 'mixin/mixin';
+
+// ==========================================================================
+// Foundation
+// ==========================================================================
+@import 'foundation/reset';
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+@import 'layouts/mainMenu';
+@import 'layouts/container';
+
+// ==========================================================================
+// Components
+// ==========================================================================
+@import 'components/titleHeader';
+@import 'components/bakeString';
+@import 'components/row1';
+@import 'components/row2';
+@import 'components/row3';
+@import 'components/row4';
+@import 'components/flexBoxWith4Items';
+@import 'components/onTop';
+@import 'components/ourGalleryBox';
+@import 'components/bakeTeamDetails';
+@import 'components/pictureMenu';
+
+// ==========================================================================
+// Projects
+// ==========================================================================
+
+// -----------------------------------------------------------------
+// Pages
+// -----------------------------------------------------------------
+@import 'projects/pages/home';
+@import 'projects/pages/about';
+@import 'projects/pages/service';
+@import 'projects/pages/gallery';
+@import 'projects/pages/clients';
+@import 'projects/pages/contact';
+
+// -----------------------------------------------------------------
+// Parts
+// -----------------------------------------------------------------
+@import 'projects/parts/header';
+@import 'projects/parts/footer';
+@import 'projects/parts/ourGallery';
+@import 'projects/parts/bakeTeam';
+
+// ==========================================================================
+// Utilities
+// ==========================================================================
+@import 'utilities/fonts';
+@import 'utilities/scroll';

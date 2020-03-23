@@ -1,0 +1,41 @@
+.c-titleHeader
+{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    margin: 0px 4px;
+    padding: 0px 12px;
+
+    &--home
+    {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+
+        margin: 0px 4px;
+        padding: 0px 12px;
+
+        @include linx(#ff0e83, none);
+    }
+
+    &:hover
+    {
+        transition: 0.5s;
+        @include linx(#ff0e83, none)
+    }
+
+    @include linx(white, none);
+}
+
+.c-titleHeaderBake
+{
+    display: flex;
+    justify-content: flex-start;
+    
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    @include linx(white, none);
+}

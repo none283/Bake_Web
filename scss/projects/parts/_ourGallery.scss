@@ -1,0 +1,130 @@
+.p-ourGallery
+{
+    height: 1056px;
+
+    text-align: center;
+
+    padding-top: 25px;
+
+    &__row1
+    {
+        width: 1313px;
+
+        margin: 48px auto;
+
+        font-size: 48px;
+        font-weight: 600;
+        letter-spacing: 2px;
+
+        color: #000000;        
+    }
+
+    &__row2
+    {
+        height: 430.94px;
+
+        display: flex;        
+
+        .p-ourGallery__col1
+        {
+            width: 641.5px;
+
+            margin: 0 15px;
+
+            height: 400.38px;
+
+            background-image: url('../images/g1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .p-ourGallery__col2
+        {
+            margin: 0 15px;
+
+            height: 400.38px;
+
+            background-image: url('../images/g1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            width: 305.75px;
+            background-image: url('../images/g2.jpg');
+        }
+
+        .p-ourGallery__col3
+        {
+            margin: 0 15px;
+
+            height: 400.38px;
+
+            background-image: url('../images/g1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            width: 305.75px;
+            background-image: url('../images/g3.jpg');
+
+            height: 400.38px;
+        }
+    }
+
+    &__row3
+    {
+        height: 400.38px;
+
+        display: flex;
+
+        .p-ourGallery__col4
+        {
+            width: 305.75px;
+
+            margin: 0 15px;
+
+            height: 400.38px;
+
+            background-image: url('../images/g4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .p-ourGallery__col5
+        {
+            width: 305.75px;
+
+            margin: 0 15px;
+
+            height: 400.38px;
+
+            background-image: url('../images/g4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            background-image: url('../images/g5.jpg');
+
+            height: 400.38px;
+        }
+
+        .p-ourGallery__col6
+        {
+            margin: 0 15px;
+
+            height: 400.38px;
+
+            background-image: url('../images/g4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            width: 641.5px;
+            background-image: url('../images/g6.jpg');
+
+            height: 400.38px;
+        }
+    }
+}

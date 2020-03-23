@@ -1,0 +1,66 @@
+.p-home
+{
+    text-align: center;
+
+    &__inner
+    {
+        height: 680px;
+
+        background-image: url('../images/home.jpg');;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        &__header
+        {
+            padding-top: 273px;
+
+            color: white;
+            
+            letter-spacing: 3px;
+            font-weight: 600;
+            font-size: 51.2px;
+        }
+
+        &__p
+        {
+            margin-bottom: 38px;
+
+            padding-top: 27px;
+
+            color: #e0e0e0;
+
+            font-size: 17px;
+        }
+
+        &__a
+        {
+            border: 1px solid white;
+            border-radius: 5px;
+
+            padding-right: 25px;
+            padding-left: 25px;
+            padding-bottom: 14px;
+            padding-top: 13px;
+
+            background-color: #ff0e83;
+
+            font-size: 14px;
+            font-weight: 500;
+
+            &:hover
+            {
+                transition: 0.5s;
+
+                background-color: white;
+
+                border: 1px solid #ff0e83;
+
+                @include linx(black, none);
+            }
+
+            @include linx(white, none);
+        }
+    }
+}

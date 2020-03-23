@@ -1,0 +1,218 @@
+.c-flexBoxWith4Items
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 73px;
+
+    &__col1
+    {
+        width: 255px;
+        text-align: center;
+
+        padding: 0 15px;
+
+        &__round
+        {
+            width: 100px;
+            height: 100px;
+
+            display: inline-block;
+
+            border: 1px solid #4e2a84;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            background-color: white;
+
+            background-size: 55px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('../images/icon1common.png');
+        }
+
+        &__header
+        {
+            font-size: 23px;
+            font-weight: 400;
+            color: black;
+
+            margin: 10px 0;
+
+            letter-spacing: 2px;
+        }
+
+        &__p
+        {
+            height: 62px;
+
+            font-size: 14px;
+            font-weight: 400;
+            color: black;
+
+            line-height: 25px;
+
+            margin-top: 14px;
+            padding-bottom: 29px;
+        }
+
+        &__btn
+        {
+            border: 2px solid white;
+            border-radius: 5px;
+
+            padding-right: 23px;
+            padding-left: 23px;
+            padding-bottom: 13px;
+            padding-top: 12px;
+
+            background-color: #ff0e83;
+
+            font-size: 14px;
+            font-weight: 500;
+
+            &:hover
+            {
+                transition: 0.5s;
+
+                background-color: white;
+
+                border: 1px solid #ff0e83;
+
+                @include linx(black, none);
+            }
+
+            @include linx(white, none);
+        }
+    }
+
+    &__col2
+    {
+        width: 255px;
+        text-align: center;
+
+        padding: 0 15px;
+
+        &__round
+        {
+            width: 100px;
+            height: 100px;
+
+            display: inline-block;
+
+            border: 1px solid #4e2a84;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            background-color: white;
+
+            background-position: center;
+            background-repeat: no-repeat;
+
+            background-image: url('../images/icon2common.png');
+            background-size: 49px;
+        }
+
+        &__header
+        {
+            @extend .c-flexBoxWith4Items__col1__header;
+        }
+
+        &__p
+        {
+            @extend .c-flexBoxWith4Items__col1__p;
+        }
+
+        &__btn
+        {
+            @extend .c-flexBoxWith4Items__col1__btn;
+        }
+    }
+
+    &__col3
+    {
+        width: 255px;
+        text-align: center;
+
+        padding: 0 15px;
+
+        &__round
+        {
+            width: 100px;
+            height: 100px;
+
+            display: inline-block;
+
+            border: 1px solid #4e2a84;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            background-color: white;
+
+            background-position: center;
+            background-repeat: no-repeat;
+
+            background-image: url('../images/icon3common.png');
+            background-size: 60px;
+        }
+
+        &__header
+        {
+            @extend .c-flexBoxWith4Items__col1__header;
+        }
+
+        &__p
+        {
+            @extend .c-flexBoxWith4Items__col1__p;
+        }
+
+        &__btn
+        {
+            @extend .c-flexBoxWith4Items__col1__btn;
+        }
+    }
+
+    &__col4
+    {
+        width: 255px;
+        text-align: center;
+
+        padding: 0 15px;
+
+        &__round
+        {
+            width: 100px;
+            height: 100px;
+
+            display: inline-block;
+
+            border: 1px solid #4e2a84;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            background-color: white;
+
+            background-size: 55px;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            background-image: url('../images/icon4common.png');
+        }
+
+        &__header
+        {
+            @extend .c-flexBoxWith4Items__col1__header;
+        }
+
+        &__p
+        {
+            @extend .c-flexBoxWith4Items__col1__p;
+        }
+
+        &__btn
+        {
+            @extend .c-flexBoxWith4Items__col1__btn;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.c-row3
+{
+    height: 419.69px;
+
+    display: flex;
+
+    text-align: center;
+
+    &__part1
+    {
+        width: 25%;
+        
+        background-color: #ff0e83;
+
+        background-image: url('../images/tastycake-l.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__part2
+    {
+        width: 25%;
+
+        background-color: #4e2a84;
+
+        &__headerMiddle
+        {
+            @extend .c-row1__part1__headerLeft;
+
+            margin-top: 47.7%;
+        }
+
+        &__pMiddle
+        {
+            @extend .c-row1__part1__pLeft;
+        }        
+    }
+
+    &__part3
+    {
+        width: 50%;
+
+        background-image: url('../images/tastycake-r.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

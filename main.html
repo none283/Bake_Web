@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <script src="https://kit.fontawesome.com/f0ad557b43.js" crossorigin="anonymous"></script>
+</head>
+<body onload="MyFunction()">
+    <div onclick="onClickIconClose()" class="c-pictureMenuCover" id="c-pictureMenuCover"></div>
+    <div class="c-pictureMenu" id="c-pictureMenu">
+        <div id="c-pictureMenuBackground" class="c-pictureMenuBackground"></div>
+        <div class="c-pictureMenuFooterCover" id="c-pictureMenuFooterCover">
+            <div class="c-pictureMenuFooter">
+                <div id="c-pictureMenuFooter__string" class="c-pictureMenuFooter__string">Image 1 of 6</div>
+                <div onclick="onClickIconClose()" class="c-pictureMenuFooter__icon"></div>
+            </div>
+        </div>         
+        <div id="c-pictureMenu__1" class="c-pictureMenu__1"></div>
+        <div id="c-pictureMenu__2" class="c-pictureMenu__2"></div>
+        <div id="c-pictureMenu__3" class="c-pictureMenu__3"></div>
+        <div id="c-pictureMenu__4" class="c-pictureMenu__4"></div>
+        <div id="c-pictureMenu__5" class="c-pictureMenu__5"></div>
+        <div id="c-pictureMenu__6" class="c-pictureMenu__6"></div>
+        <div id="c-pictureMenu__leftRight" class="c-pictureMenu__leftRight">
+            <div onclick="onClickIconSlideBack()" onmouseover='onHover(1)' onmouseout='onHoverLeftFunction("0", "default")' id="c-pictureMenu__left" class="c-pictureMenu__left">
+                <i class="fas fa-chevron-left fa-2x"></i>
+            </div>
+            <div onclick="onClickIconSlideNext()" onmouseover='onHover(2)' onmouseout='onHoverRightFunction("0", "default")' id="c-pictureMenu__right" class="c-pictureMenu__right">                
+                <i class="fas fa-chevron-right fa-2x"></i>
+            </div>
+        </div>  
+    </div>    
+    <header>
+        <section class="p-header">
+            <div class="c-bakeString">
+                <a class="c-titleHeaderBake" href="#">BAKE</a>
+            </div>
+            <div onclick="onClickMenuButton()" class="p-header__menuButton"><i class="fas fa-bars"></i></div>
+            <nav id="l-mainMenu" class="l-mainMenu">
+                <a class="c-titleHeader--home" href="#homeAnchor">HOME</a>
+                <a id="c-titleHeader0" class="c-titleHeader" href="#aboutAnchor">ABOUT</a>
+                <a id="c-titleHeader1" class="c-titleHeader" href="#serviceAnchor">SERVICE</a>
+                <a id="c-titleHeader2" class="c-titleHeader" href="#galleryAnchor">GALLERY</a>
+                <a id="c-titleHeader3" class="c-titleHeader" href="#clientsAnchor">CLIENTS</a>
+                <a id="c-titleHeader4" class="c-titleHeader" href="#contactAnchor">CONTACT</a>
+            </nav>
+        </section>
+        <a href="#" class="c-onTop"></a>
+    </header>
+    <main>
+        <section class="p-home">
+            <div class="l-container">
+                <div class="p-home__inner">
+                    <div id="homeAnchor"></div>
+                    <h4 class="p-home__inner__header">Best Bake Here</h4>
+                    <p class="p-home__inner__p">Donec at massa nec sem eleifend fermentum.</p>
+                    <a href="#aboutAnchor" class="p-home__inner__a">LEARN MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="p-about">
+            <div class="l-container">
+                <div class="p-about__inner">
+                    <div class="c-row1">
+                        <div id="aboutAnchor" class="c-row1__aboutAnchor"></div>
+                        <div class="c-row1__part1">
+                            <h4 class="c-row1__part1__headerLeft">Tradition</h4>
+                            <p class="c-row1__part1__pLeft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+                        </div>
+                        <div class="c-row1__part2">
+                        </div>
+                        <div class="c-row1__part3">
+                            <h4 class="c-row1__part3__headerRight">Creativity</h4>
+                            <p class="c-row1__part3__pRight">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+                        </div>
+                    </div>
+                    <div class="c-row2">
+                        <div class="c-row2__part1">
+                            <h4 class="c-row2__part1__headerLeft">What We Bake Best For You</h4>
+                            <p class="c-row2__part1__pLeft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolorL orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+                        </div>
+                        <div class="c-row2__part2">
+                        </div>
+                        <div class="c-row2__part3">
+                            <h4 class="c-row2__part3__headerRight">Quality</h4>
+                            <p class="c-row2__part3__pRight">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
+                        </div>
+                    </div>
+                    <div class="c-row3">
+                        <div class="c-row3__part1"></div>
+                        <div class="c-row3__part2">
+                            <h4 class="c-row3__part2__headerMiddle">Tasty Cakes</h4>
+                            <p class="c-row3__part2__pMiddle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
+                        </div>
+                        <div class="c-row3__part3"></div>
+                    </div>
+                    <div class="c-row4">
+                        <div class="c-row4__part1">
+                            <h4 id="number1" class="c-row4__part1__header">0</h4>
+                            <p class="c-row4__part1__p">Coffee</p>
+                        </div>
+                        <div class="c-row4__part2">
+                            <h4 id="number2" class="c-row4__part2__header">0</h4>
+                            <p class="c-row4__part2__p">Happy Client</p>
+                        </div>
+                        <div class="c-row4__part3">
+                            <h4 id="number3" class="c-row4__part3__header">0</h4>
+                            <p class="c-row4__part3__p">Experience</p>
+                        </div>
+                        <div class="c-row4__part4">
+                            <h4 id="number4" class="c-row4__part4__header">0</h4>
+                            <p class="c-row4__part4__p">Expert Worker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-service">
+            <div class="l-container">
+                <div class="p-service__inner">
+                    <div id="serviceAnchor"></div>
+                    <div class="p-service__inner__header">OUR SERVICES</div>
+                    <div class="c-flexBoxWith4Items">
+                        <div onmouseover="mouse_Hover(1)" onmouseout="mouse_Out(1)" class="c-flexBoxWith4Items__col1">
+                            <div id="col1__img" class="c-flexBoxWith4Items__col1__round"></div>
+                            <h4 class="c-flexBoxWith4Items__col1__header">Tasty Cakes</h4>
+                            <p class="c-flexBoxWith4Items__col1__p">delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+                            <a href="#aboutAnchor" class="c-flexBoxWith4Items__col1__btn">Learn more</a>
+                        </div>
+                        <div onmouseover="mouse_Hover(2)" onmouseout="mouse_Out(2)" class="c-flexBoxWith4Items__col2">
+                            <div id="col2__img" class="c-flexBoxWith4Items__col2__round"></div>
+                            <h4 class="c-flexBoxWith4Items__col2__header">Creativity</h4>
+                            <p class="c-flexBoxWith4Items__col2__p">delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+                            <a href="#aboutAnchor" class="c-flexBoxWith4Items__col2__btn">Learn more</a>
+                        </div>
+                        <div onmouseover="mouse_Hover(3)" onmouseout="mouse_Out(3)" class="c-flexBoxWith4Items__col3">
+                            <div id="col3__img" class="c-flexBoxWith4Items__col3__round"></div>
+                            <h4 class="c-flexBoxWith4Items__col3__header">Tradition</h4>
+                            <p class="c-flexBoxWith4Items__col3__p">delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+                            <a href="#aboutAnchor" class="c-flexBoxWith4Items__col3__btn">Learn more</a>
+                        </div>
+                        <div onmouseover="mouse_Hover(4)" onmouseout="mouse_Out(4)" class="c-flexBoxWith4Items__col4">
+                            <div id="col4__img" class="c-flexBoxWith4Items__col4__round"></div>
+                            <h4 class="c-flexBoxWith4Items__col4__header">Quality</h4>
+                            <p class="c-flexBoxWith4Items__col4__p">delectus reiciendis maiores alias consequatur aut.maiores alias</p>
+                            <a href="#aboutAnchor" class="c-flexBoxWith4Items__col4__btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <section class="p-gallery">
+            <div class="l-container">
+                <div class="p-ourGallery">
+                    <div id="galleryAnchor" style="position: absolute;top: 0"></div>
+                    <div class="p-ourGallery__row1">OUR GALLERY</div>                    
+                    <div class="p-ourGallery__row2">
+                        <div class="p-ourGallery__col1">
+                            <div onclick="onClickOpen(1)" class="c-ourGalleryBox">
+                                <h2 class="c-ourGalleryBox__our">
+                                    OUR<span class="c-ourGalleryBox__gallery">GALLERY</span>
+                                </h2>
+                                <div class="c-ourGalleryBox__line"></div>
+                                <div class="c-ourGalleryBox__footer">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING.</div>
+                            </div>
+                        </div>
+                        <div class="p-ourGallery__col2">
+                            <div onclick="onClickOpen(2)" class="c-ourGalleryBox">
+                                <h2 class="c-ourGalleryBox__our">
+                                    OUR<span class="c-ourGalleryBox__gallery">GALLERY</span>
+                                </h2>
+                                <div class="c-ourGalleryBox__line"></div>
+                                <div class="c-ourGalleryBox__footer">
+                                    LOREM IPSUM DOLOR SIT AMET,
+                                    <div style="position: absolute; right: 0;">CONSECTETUER ADIPISCING.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ourGallery__col3">
+                            <div onclick="onClickOpen(3)" class="c-ourGalleryBox">
+                                <h2 class="c-ourGalleryBox__our">
+                                    OUR<span class="c-ourGalleryBox__gallery">GALLERY</span>
+                                </h2>
+                                <div class="c-ourGalleryBox__line"></div>
+                                <div class="c-ourGalleryBox__footer">
+                                    LOREM IPSUM DOLOR SIT AMET,
+                                    <div style="position: absolute; right: 0;">CONSECTETUER ADIPISCING.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-ourGallery__row3">
+                        <div class="p-ourGallery__col4">
+                            <div onclick="onClickOpen(4)" class="c-ourGalleryBox">
+                                <h2 class="c-ourGalleryBox__our">
+                                    OUR<span class="c-ourGalleryBox__gallery">GALLERY</span>
+                                </h2>
+                                <div class="c-ourGalleryBox__line"></div>
+                                <div class="c-ourGalleryBox__footer">
+                                    LOREM IPSUM DOLOR SIT AMET,
+                                    <div style="position: absolute; right: 0;">CONSECTETUER ADIPISCING.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ourGallery__col5">
+                            <div onclick="onClickOpen(5)" class="c-ourGalleryBox">
+                                <h2 class="c-ourGalleryBox__our">
+                                    OUR<span class="c-ourGalleryBox__gallery">GALLERY</span>
+                                </h2>
+                                <div class="c-ourGalleryBox__line"></div>
+                                <div class="c-ourGalleryBox__footer">
+                                    LOREM IPSUM DOLOR SIT AMET,
+                                    <div style="position: absolute; right: 0;">CONSECTETUER ADIPISCING.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-ourGallery__col6">
+                            <div onclick="onClickOpen(6)" class="c-ourGalleryBox">
+                                <h2 class="c-ourGalleryBox__our">
+                                    OUR<span class="c-ourGalleryBox__gallery">GALLERY</span>
+                                </h2>
+                                <div class="c-ourGalleryBox__line"></div>
+                                <div class="c-ourGalleryBox__footer">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING.</div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="p-bakeTeam">
+                    <h2 class="p-bakeTeam__row1">BAKE TEAM</h2>
+                    <div class="p-bakeTeam__row2">
+                        <div class="p-bakeTeam__col1">                                                       
+                            <div id= "test2" class="c-bakeTeamDetails__1">
+                                <h2 class="c-bakeTeamDetails__hidedFullName">
+                                    John Simon
+                                    <h3 class="c-bakeTeamDetails__hidedJob">-Cake Maker</h3>
+                                    <p class="c-bakeTeamDetails__hidedString">Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                                    <div class="c-bakeTeamDetails__iconFb"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="c-bakeTeamDetails__iconGg"><i class="fab fa-google-plus-g"></i></div>
+                                    <div class="c-bakeTeamDetails__iconTt"><i class="fab fa-twitter"></i></div>                                                                     
+                                </h2>                                
+                            </div>
+                            <div class="p-bakeTeam__name1">
+                                <div class="p-bakeTeam__fullName">
+                                    John Simon
+                                    <div class="p-bakeTeam__job">-Cake Maker</div>
+                                </div>                                
+                            </div>                         
+                        </div>
+                        <div class="p-bakeTeam__col2">                            
+                            <div class="c-bakeTeamDetails__2">
+                                <h2 class="c-bakeTeamDetails__hidedFullName">
+                                    Max Will &nbsp;
+                                    <h3 class="c-bakeTeamDetails__hidedJob">-Coffee Maker</h3>
+                                    <p class="c-bakeTeamDetails__hidedString">Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                                    <div class="c-bakeTeamDetails__iconFb"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="c-bakeTeamDetails__iconGg"><i class="fab fa-google-plus-g"></i></div>
+                                    <div class="c-bakeTeamDetails__iconTt"><i class="fab fa-twitter"></i></div>                                                                     
+                                </h2>                                
+                            </div>
+                            <div class="p-bakeTeam__name2">
+                                <div class="p-bakeTeam__fullName">
+                                    Max Will &nbsp;
+                                    <div class="p-bakeTeam__job">-Coffee Maker</div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="p-bakeTeam__col3">                            
+                            <div class="c-bakeTeamDetails__3">
+                                <h2 class="c-bakeTeamDetails__hidedFullName">
+                                    Rose Murphy
+                                    <h3 class="c-bakeTeamDetails__hidedJob">-Staff Manager</h3>
+                                    <p class="c-bakeTeamDetails__hidedString">Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                                    <div class="c-bakeTeamDetails__iconFb"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="c-bakeTeamDetails__iconGg"><i class="fab fa-google-plus-g"></i></div>
+                                    <div class="c-bakeTeamDetails__iconTt"><i class="fab fa-twitter"></i></div>                                                                     
+                                </h2>                                
+                            </div>
+                            <div class="p-bakeTeam__name3">
+                                <div class="p-bakeTeam__fullName">
+                                    Rose Murphy
+                                    <div class="p-bakeTeam__job">-Staff Manager</div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-bakeTeam__row3">
+                        <div class="p-bakeTeam__col4">                            
+                            <div class="c-bakeTeamDetails__4">
+                                <h2 class="c-bakeTeamDetails__hidedFullName">
+                                    Barbara Will
+                                    <h3 class="c-bakeTeamDetails__hidedJob">-Cake Maker</h3>
+                                    <p class="c-bakeTeamDetails__hidedString">Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                                    <div class="c-bakeTeamDetails__iconFb"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="c-bakeTeamDetails__iconGg"><i class="fab fa-google-plus-g"></i></div>
+                                    <div class="c-bakeTeamDetails__iconTt"><i class="fab fa-twitter"></i></div>                                                                     
+                                </h2>                                
+                            </div>
+                            <div class="p-bakeTeam__name4">
+                                <div class="p-bakeTeam__fullName">
+                                    Barbara Will
+                                    <div class="p-bakeTeam__job">-Cake Maker</div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="p-bakeTeam__col5">                            
+                            <div class="c-bakeTeamDetails__5">
+                                <h2 class="c-bakeTeamDetails__hidedFullName">
+                                    Derek Bybee
+                                    <h3 class="c-bakeTeamDetails__hidedJob">-Coffee Maker</h3>
+                                    <p class="c-bakeTeamDetails__hidedString">Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                                    <div class="c-bakeTeamDetails__iconFb"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="c-bakeTeamDetails__iconGg"><i class="fab fa-google-plus-g"></i></div>
+                                    <div class="c-bakeTeamDetails__iconTt"><i class="fab fa-twitter"></i></div>                                                                     
+                                </h2>                                
+                            </div>
+                            <div class="p-bakeTeam__name5">
+                                <div class="p-bakeTeam__fullName">
+                                    Derek Bybee
+                                    <div class="p-bakeTeam__job">-Coffee Maker</div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="p-bakeTeam__col6">                            
+                            <div class="c-bakeTeamDetails__6">
+                                <h2 class="c-bakeTeamDetails__hidedFullName">
+                                    Lucille Webster
+                                    <h3 class="c-bakeTeamDetails__hidedJob">-Staff Manager</h3>
+                                    <p class="c-bakeTeamDetails__hidedString">Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam</p>
+                                    <div class="c-bakeTeamDetails__iconFb"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="c-bakeTeamDetails__iconGg"><i class="fab fa-google-plus-g"></i></div>
+                                    <div class="c-bakeTeamDetails__iconTt"><i class="fab fa-twitter"></i></div>                                                                     
+                                </h2>                                
+                            </div>
+                            <div class="p-bakeTeam__name6">
+                                <div class="p-bakeTeam__fullName">
+                                    Lucille Webster
+                                    <div class="p-bakeTeam__job">-Staff Manager</div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-clients">
+            <div class="l-container">
+                <div class="p-clients__inner">
+                    <div id="clientsAnchor"></div>
+                    <div class="p-clients__row1">TESTIMONIALS</div>
+                    <div class="p-clients__row2">
+                        <div id="p-clients__row2String" class="p-clients__row2String">
+                            <div class="p-clients__col1">
+                                <p class="col1String">
+                                    <div class="col1String__string">
+                                        <i class="fas fa-quote-left fa-lg" style="color: #2cbeff;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        At vero eos et accusam kasd gubergren sed diam aliquyamerat, sed voluptua labore et doloremagnal aliquyamerat, sed diam voluptua.
+                                        &nbsp;&nbsp;&nbsp;
+                                        <i class="fas fa-quote-right fa-lg" style="color: #2cbeff;"></i>
+                                    </div>
+                                </p>
+                                <h3 class="col1Name">ALLYI</h3>
+                            </div>
+                            <div class="p-clients__col2">
+                                <p class="col2String">
+                                    <div class="col2String__string">
+                                        <i class="fas fa-quote-left fa-lg" style="color: #2cbeff;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        At vero eos et accusam kasd gubergren sed diam aliquyamerat, sed voluptua labore et doloremagnal aliquyamerat, sed diam voluptua.
+                                        &nbsp;&nbsp;&nbsp;
+                                        <i class="fas fa-quote-right fa-lg" style="color: #2cbeff;"></i>
+                                    </div>
+                                </p>
+                                <h3 class="col2Name">WILLSON</h3>
+                            </div>
+                            <div class="p-clients__col3">
+                                <p class="col3tring">
+                                    <div class="col3String__string">
+                                        <i class="fas fa-quote-left fa-lg" style="color: #2cbeff;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        At vero eos et accusam kasd gubergren sed diam aliquyamerat, sed voluptua labore et doloremagnal aliquyamerat, sed diam voluptua.
+                                        &nbsp;&nbsp;&nbsp;
+                                        <i class="fas fa-quote-right fa-lg" style="color: #2cbeff;"></i>
+                                    </div>
+                                </p>
+                                <h3 class="col3Name">MAX</h3>
+                            </div>
+                        </div>                       
+                        <div class="circleMenu">
+                            <div id="circle1" class="circle1"></div>
+                            <div id="circle2" class="circle2"></div>
+                            <div id="circle3" class="circle3"></div>   
+                        </div>                                                                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-contact">
+            <div class="l-container">
+                <div id="contactAnchor"></div>
+                <div class="p-contact__row1">CONTACT</div>
+                <div class="p-contact__form">
+                    <form action="" class="p-contact__form">
+                        <input type="text" placeholder="Name" class="formName" required></input>
+                        <input type="text" placeholder="Last Name" class="formLastName" required></input>
+                        <input type="email" placeholder="Email" class="formEmail" required="@"></input>
+                        <input type="text" placeholder="Phone" class="formPhone" required></input>
+                        <input type="text" name="Message" placeholder="Message" class="formMessage" required></input>
+                        <input type="submit" class="formSend" value="Send"></input>
+                    </form>
+                </div>
+                <div class="p-contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3752370.5206989264!2d-96.91978424444385!3d39.4376611529039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1584779659847!5m2!1svi!2s" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="p-contact__row4">
+                    <div class="row4Address">
+                        <div class="row4Address__icon">
+                            <i class="fas fa-home fa-2x"></i>
+                        </div>
+                        <p class="row4Address__string">25478 Road St.121 <br />
+                            USA New Hill</p>
+                    </div>
+                    <div class="row4Phone">
+                        <div class="row4Phone__icon">
+                            <i class="fas fa-phone fa-2x"></i>
+                        </div>
+                        <div class="row4Phone__string">+(000) 123 4565 32 <br />
+                            +(010) 123 4565 35
+                        </div>
+                    </div>
+                    <div class="row4Mail">
+                        <div class="row4Mail__icon">
+                            <i class="fas fa-envelope-open fa-2x"></i>
+                        </div>
+                        <div class="row4Mail__string">info@example1.com <br />
+                            info@example2.com</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="p-footer">
+            <div class="p-footer__col1">
+                <h2 class="footerCol1_header">About us</h2>
+                <p class="footerCol1_para_1">ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
+                <p class="footerCol1_para_2">ultricies nec, pellentesque eu, pretium quis, sem. Nulla</p>
+                <div class="footerCol1_icon">
+                    <div class="footerCol1_iconFb"><i class="fab fa-facebook-f"></i></div>
+                    <div class="footerCol1_iconGg"><i class="fab fa-google-plus-g"></i></div>
+                    <div class="footerCol1_iconTt"><i class="fab fa-twitter"></i></div>  
+                </div>
+            </div>
+            <div class="p-footer__col2">
+                <h2 class="footerCol2_header">Working time</h2>
+                <li class="footerCol2_para">
+                    Monday
+                    <span class="footerCol2_span">9:30-18:30</span>
+                </li>
+                <li class="footerCol2_para">                        
+                    Tuesday
+                    <span class="footerCol2_span">9:30-18:30</span>
+                </li>
+                <li class="footerCol2_para">
+                    Wednesday
+                    <span class="footerCol2_span">9:30-18:30</span>
+                </li>
+                <li class="footerCol2_para">
+                    Thursday
+                    <span class="footerCol2_span">9:30-18:30</span>
+                </li>
+                <li class="footerCol2_para">
+                    Friday
+                    <span class="footerCol2_span">9:30-18:30</span>
+                </li>
+                <li class="footerCol2_para">
+                    Saturday
+                    <span class="footerCol2_span">9:30-18:30</span>
+                </li>
+                <li class="footerCol2_para">
+                    Sunday
+                    <span class="footerCol2_span">closed</span>
+                </li>                    
+            </div>
+            <div class="p-footer__col3">
+                <h2 class="footerCol3_header">Twitter Us</h2>
+                <p class="footerCol3_para">ultricies nec, pellentesque eu, pretium quis,</p>
+                <p class="footerCol3_para">ultricies nec, pellentesque eu, pretium quis,</p>
+                <p class="footerCol3_para">ultricies nec, pellentesque eu, pretium quis,</p>
+                <p class="footerCol3_para">ultricies nec, pellentesque eu</p>
+            </div>
+            <div class="p-footer__col4">
+                <h2 class="footerCol4_header">SUBSCRIBE US</h2>
+                <form action="">
+                    <input type="email" placeholder="name@example.com" class="footerCol4_input" required="@"></input>
+                    <input type="submit" class="footerCol4_submit" value="Send"></input>
+                </form>                
+                <p class="footerCol4_para">ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
+            </div>
+            <div class="p-footer__col5">
+                <span class="footerCol5_para">© 2018 Bake. All Rights Reserved | Coded by </span>
+                <span class="footerCol5_name">quanVu</span>
+            </div>
+        </section>
+    </footer>
+    
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.countUp.js"></script>
+    <script>
+        var check = false;
+
+        var a =
+        {
+            start: 0,
+            last: 3500,
+            duration: 1200,
+            frame: 33
+        };
+
+        var b =
+        {
+            start: 0,
+            last: 650,
+            duration: 1200,
+            frame: 33
+        };
+
+        var c =
+        {
+            start: 0,
+            last: 10,
+            duration: 1200,
+            frame: 33
+        };
+
+        var d =
+        {
+            start: 0,
+            last: 1010,
+            duration: 1200,
+            frame: 33
+        };
+
+        document.addEventListener("scroll", function()
+        {
+            if(document.documentElement.scrollTop >= 1360 && check == false)
+            {   
+                $('#number1').countUp(a);
+                $('#number2').countUp(b);
+                $('#number3').countUp(c);
+                $('#number4').countUp(d);
+
+                check = true;
+            }
+            else if(document.documentElement.scrollTop < 1360 && check == true)
+            {                                
+                check = false;
+            }
+        });
+    </script>   
+</body>
+</html>

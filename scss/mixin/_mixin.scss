@@ -1,0 +1,27 @@
+@mixin linx ($linx-color, $linx-decoration)
+{
+    &:link
+    {
+        color: $linx-color;
+        text-decoration: $linx-decoration;
+    }   
+    &:visited
+    {
+        color: $linx-color;
+        text-decoration: $linx-decoration;
+    }
+    &:hover
+    {
+        text-decoration: $linx-decoration;
+    }
+    &:active
+    {
+        color: $linx-color;
+        text-decoration: $linx-decoration;
+    }
+}
+
+@mixin textStroke ($color, $size)
+{
+    text-shadow: -$size -$size 0 $color, $size -$size 0 $color, -$size $size 0 $color, $size $size 0 $color;
+}
